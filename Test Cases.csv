@@ -1,0 +1,110 @@
+TC ID,TC title ,preconditions,steps,expected result,actual result,pass\fail,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TC _reg_1,Register with correct info,"Stable internet connection
+Website is up and running
+User not registered with same username or password
+
+
+           
+                                       ","1-Go to the website link.
+2- Enter valid name(ereny_andro).
+3-Enter valid password(@Ee123456789).
+4-Enter valid email (erenyandro@gmail.com).
+5-Click on the register button.",User is registered successfully and a confirmation email is sent!,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TC _reg_2,Register with invalid username,"Stable internet connection
+Website is up and running
+User not registered with same username or password
+
+
+           
+                                       ","1-Go to the website link.
+2- Enter invalid name(ereny123andro).
+3-Enter valid password(@Ee123456789).
+4-Enter valid email (erenyandro@gmail.com).
+5-Click on the register button.","Error message: ""please enter a valid username.""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TC _reg_3,Register with invalid password,"Stable internet connection
+Website is up and running
+User not registered with same username or password
+
+
+           
+                                       ","1-Go to the website link.
+2- Enter valid name(ereny_andro).
+3-Enter invalid password(123).
+4-Enter valid email (erenyandro@gmail.com).
+5-Click on the register button.","Error message: ""please enter a valid password.""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TC _reg_4,Register with invalid email,"Stable internet connection
+Website is up and running
+User not registered with same username or password
+
+
+           
+                                       ","1-Go to the website link.
+2- Enter valid name(ereny_andro).
+3-Enter valid password(@Ee123456789).
+4-Enter invalid email (erenyandrogmail.com).
+5-Click on the register button.","Error message: ""please enter a valid email.""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TC _reg_5,Double submit quickly on the rigester buttom,"Stable internet connection
+Website is up and running
+User not registered with same username or password
+
+
+           
+                                       ","1-Go to the website link.
+2- Enter valid name(ereny_andro).
+3-Enter valid password(@Ee123456789).
+4-Enter valid email (erenyandro@gmail.com).
+5-Click on the register button twice quickly.","Error message: ""only one registration request has been processed.""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,"
+           
+                                       ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TC_log_1,Login with valid info,"Stable internet connection
+Website is up and running
+User account already registered and active
+
+
+           
+                                       ","1-Go to the website login page.
+2-Enter valid username(ereny_andro).
+3-Enter valid password(@Ee123456789).
+4-Click on login button.",User is successfully logged in and redirected to the home page.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TC_log_2,Login with invalid username,"Stable internet connection
+Website is up and running
+User account already registered and active
+
+
+           
+                                       ","1-Go to the website login page.
+2-Enter invalid username(12345678).
+3-Enter valid password(@Ee123456789).
+4-Click on login button.","Error message: ""Please enter correct user name or password""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TC_log_3,Login with invalid password,"Stable internet connection
+Website is up and running
+User account already registered and active
+
+
+           
+                                       ","1-Go to the website login page.
+2-Enter valid username(ereny_andro).
+3-Enter invalid password(ereny).
+4-Click on login button.","Error message: ""Please enter correct user name or password""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TC_log_4,Login with inactive email,"Stable internet connection
+Website is up and running
+User account already registered but inactive
+
+
+           
+                                       ","1-Go to the website login page.
+2-Enter valid username(rina_helmy).
+3-Enter valid password(@Ee123456789).
+4-Click on login button.","""Account inactive, please verify your email""",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TC_log_5,Login with different case in username,"Stable internet connection
+Website is up and running
+User account already registered and active
+
+
+           
+                                       ","1-Go to the website login page.
+2-Enter valid username but in different case (Ereny_Andro).
+3-Enter valid password(@Ee123456789).
+4-Click on login button.","if system is case sensitive show error: ""Invalid username or password""
+if system is case insensitive: login successful and user is redirect to the home page.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
