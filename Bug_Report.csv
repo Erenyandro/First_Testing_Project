@@ -1,0 +1,13 @@
+Bug ID,Title,Module,Severity,Priority,Environment,Steps to Reproduce,Expected Result,Actual Result,Status,Screenshot
+BUG_LOG_01,Wrong error message for invalid username,Login,Medium,High,"Chrome vXX, Windows 10","1. Open login page
+2. Enter invalid username: incorrectUser
+3. Enter valid password: Password123
+4. Click Submit",Error message: 'Your username is invalid!',Error message: 'Your password is invalid!',Fail,screenshot_invalid_username.png
+BUG_LOG_02,Typo in error message for invalid password,Login,Low,Medium,"Chrome vXX, Windows 10","1. Open login page
+2. Enter valid username: student
+3. Enter invalid password: incorrectPassword
+4. Click Submit",Error message: 'Your password is invalid!',Error message: 'Your password is invalid!d',Fail,screenshot_invalid_password.png
+BUG_LOG_03,Wrong error message for different case username,Login,Medium,Medium,"Chrome vXX, Windows 10","1. Open login page
+2. Enter username in different case (e.g. STUDENT)
+3. Enter valid password: password
+4. Click Submit",If case insensitive: login success. If case sensitive: error should say 'Your username is invalid!',Error message: 'Your password is invalid!d',Fail,screenshot_case_username.png
